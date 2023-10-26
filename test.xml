@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+  <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+  <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+      <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509IssuerSerial>
+            <ds:X509IssuerName>
+              CN=Encryption Certificate,O=Acme,ST=Singapore,C=SG
+            </ds:X509IssuerName>
+            <ds:X509SerialNumber>9929507345006540460</ds:X509SerialNumber>
+          </ds:X509IssuerSerial>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <xenc:CipherData>
+        <xenc:CipherValue>
+          MmIEJ/sjBn3s0Whz7PZdADeumuX9FvlpJ2gVY3MxDIwFECJT8fzc10+vog0H8SPYMoXkfx7Tkw+A
+          /Wo2k7Amo4BKBDNRlXfwWp9rZnvG0sJLwV2FOvVHd0brbp6vGh/Iiq68sD0du2PFtGee7Y2vEafP
+          lbA/FflvV8JOxmRgsfo=
+        </xenc:CipherValue>
+      </xenc:CipherData>
+    </xenc:EncryptedKey>
+  </ds:KeyInfo>
+  <xenc:CipherData>
+    <xenc:CipherValue>
+      4EaYbOVPZSJKpbw0UOlxPZJbEGoLolepVbygojklFgepwCXfO3NajYFg8miAFPt8KgI5IHA7Hswj
+      Ph8QWOQ0sWQ9vJPdM/l16YGqs6F0Skq+E4i3vh7GwACqN1Wp19Le4EBGJUzAQV3ja6G4Gd2urdFB
+      T6VCAFFMMvtuA9UUXDU3mdabhbMFP7SdRP6uDrewO0Os+0MuBdENQt8BLT3NMk2FrlCY6ZBJ0Kh/
+      vRHglYV/n6XfpbkPlHjlowJ37cOvwgW31r3bnayudgPUxntmgA==
+    </xenc:CipherValue>
+  </xenc:CipherData>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <ds:DigestValue>
+          htK5M2sDDIxuGAYAUJI0t8FclO6256NhPAihJbAQPFs=
+        </ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      XI6A2j1liW3QhP962dXKprzYSwjPkyP7hcA2i9Zq3IWB3C2OirAdk/3uDQDqLCsmrYV0vvzpGPIa
+      ewyZ4vKXauAtarbUJwgOMSi7k42p/j+LMylr4ucR4j5K3LIkNunDQM1Kw610TQkQKUmMGPoWrVXC
+      vX6i4CMZwX23XeNDJwc=
+    </ds:SignatureValue>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509IssuerSerial>
+          <ds:X509IssuerName>
+            CN=Signer Certificate,O=Acme,ST=Singapore,C=SG
+          </ds:X509IssuerName>
+          <ds:X509SerialNumber>
+            10316727642898801788
+          </ds:X509SerialNumber>
+        </ds:X509IssuerSerial>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+</xenc:EncryptedData>

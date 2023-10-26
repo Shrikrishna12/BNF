@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EncryptedData Type="http://www.w3.org/2001/04/xmlenc#Element" xmlns="http://www.w3.org/2001/04/xmlenc#">
+  <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+  <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <EncryptedKey xmlns="http://www.w3.org/2001/04/xmlenc#">
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" />
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509IssuerSerial>
+            <X509IssuerName>CN=Encryption Certificate, O=Acme, ST=Singapore, C=SG</X509IssuerName>
+            <X509SerialNumber>9929507345006540460</X509SerialNumber>
+          </X509IssuerSerial>
+        </X509Data>
+      </KeyInfo>
+      <CipherData>
+        <CipherValue>
+          k894n4/aSDZ4GkjeV6F8OYcjSwce5MLgh/nCj/C24MnJwBUbONR7bXTOSH7/0SA+vnQ/pc3QYxlG
+          D6yjtdzwm0PxFBtY9u5dUiGA7xkcoeR6vlLMeavPvfGGv1zBwAkSqtOqQZWGPQP3PL0tn2GYyyG6
+          wTYJLzGYxyRB+0IA/0Y=
+        </CipherValue>
+      </CipherData>
+    </EncryptedKey>
+  </KeyInfo>
+  <CipherData>
+    <CipherValue>
+      6PGNvu9Cofr6KTeqw+yQu+B3nvSa6CF2zsyp8tETMFWOL8i/87pfVsuWPaKySnC5Akidv19Tqn6F
+      vx7dgL5U0aQYCQvEHOX6TQIywfP3tmeYkDDB+LuIgsKyOXAAODDSsO5RgpxNc2Ipq7eKZcNIHHGn
+      XFEUKrhM3Qsyr5ZKJ87s3genqAMPms3i893ZnY9y+YVZVxBv8SFebWDtVmOMPMnB+BbSJs7b6GT7
+      /xJwujZSkCuECDZ89dAEX4yaI+j1mT/jz33Fg7LyKUZVieMiAw==
+    </CipherValue>
+  </CipherData>
+  <Signature xmlns="http://www.w3.org/2001/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <DigestValue>
+          iEVH5ZSdA726nprH0IncnsNk1VCvsBle4cQD6ce7zSE=
+        </DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      B2vyqEKlujWC0YR9p+DeFE6wrM+7mgAFu6IwE6hjkUU5oMPCRPLqg/SnDDsF7Wx2EM7YZ6piPXHd
+      lZC3KmIIvyjE1BwMXENjge+GIKfEAln9iG5UEC6Amu9a4STclNkuNNILQ8KemrY/TF0/1dMzxixB
+      6KaigXqD5TICgU5dkdw=</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509IssuerSerial>
+          <X509IssuerName>CN=Signer Certificate, O=Acme, ST=Singapore, C=SG</X509IssuerName>
+          <X509SerialNumber>10316727642898801788</X509SerialNumber>
+        </X509IssuerSerial>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EncryptedData>
